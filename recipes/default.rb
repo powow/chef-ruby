@@ -31,7 +31,7 @@ execute 'Installing chruby' do
     sudo make install;
   STRING
 
-  not_if { File.exist?('/usr/local/bin/chruby') }
+  not_if { File.exist?('/usr/local/bin/chruby-exec') }
 end
 
 # load chruby globally
